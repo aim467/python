@@ -1,18 +1,19 @@
-
-
-#coding='utf-8'
-
-from city import city
 import requests
 import json
 
-cityname = input("请输入你要查询的天气:")
-citycode = city[cityname]
+cityname = input("请输入你要查询的城市名:")
+
+url = 'https://www.sojson.com/open/api/weather/json.shtml?city='+cityname
+
+data = requests.get(url)
+data.json
+city = data.json()["city"]
+wendu = data.json()["data"]["wendu"]
+wuran = data.json()["data"]["quality"]
+
+print("你所查询的城市为:"+city)
+print("你所查询的城市今天的温度为:"+wendu+"℃")
+print("污染级数为:"+wuran)
 
 
-url =  "http://www.weather.com.cn/data/sk/"+citycode+".html" 
-content = requests.get(url)
-content.encoding = 'utf-8'
-city = content.json()["weatherinfo"]["city"]
-wendu = content.json()["weatherinfo"]["temp"]
-print("城市:",city,"温度:",wendu)
+
