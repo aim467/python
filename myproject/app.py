@@ -20,7 +20,7 @@ app = Flask(__name__)
 app.config.from_object(config)
 app.config['SECERT_KEY'] = 'hard to guess'
 #登录数据库
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:lovexps666@localhost:3306/aim467'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://****:*******@localhost:3306/****'
 #设置每一次提交数据库的变动
 app.config['SQLALCHEMY_COMMIT_ON_TEARDOWN'] = True
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] =True
