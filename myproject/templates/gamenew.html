@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>news</title>
+</head>
+<body>
+    <ul>
+    {% for a in c[:9] %}
+        <li>{{  a.title  }}</li>
+        <li>{{  a.texts  }}</li>
+    {% endfor %}
+    </ul>
+</body>
+</html>
