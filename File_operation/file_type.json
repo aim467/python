@@ -1,0 +1,50 @@
+[
+  {
+    "type": ".py",
+    "description": "Python源文件"
+  },
+  {
+    "type": ".java",
+    "description": "Java源文件"
+  },
+  {
+    "type" : ".c",
+    "description": "C语言源文件"
+  },
+  {
+    "type": ".php",
+    "description":"PHP源文件"
+  },
+  {
+    "type": ".js",
+    "description": "Javascript文件"
+  },
+  {
+    "type": ".html",
+    "description":"网页文件"
+  },
+  {
+    "type": ".c",
+    "description":"C语言源文件"
+  },
+  {
+    "type": ".cs",
+    "description":"C#源文件"
+  },
+  {
+    "type": ".asp",
+    "description":"asp源文件"
+  },
+  {
+    "type": ".cpp",
+    "description":"C++源文件"
+  },
+  {
+    "type": ".css",
+    "description":"Css源文件"
+  },
+  {
+    "type": ".txt",
+    "description": "记事本源文件"
+  },
+]
